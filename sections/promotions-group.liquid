@@ -1,4 +1,4 @@
-<h2>{{ section.settings.title }}</h2>
+<h2 style="text-align: {{ section.settings.title_alignment }};">{{ section.settings.title }}</h2>
 
 
 {% schema %}
@@ -17,17 +17,17 @@
         "id": "title_alignment",
         "options": [
           {
-            "value": "top",
-            "label": "Top"
+            "value": "left",
+            "label": "Left"
           }, {
-            "value": "middle",
-            "label": "Middle"
+            "value": "center",
+            "label": "Center"
           }, {
-            "value": "bottom",
-            "label": "Bottom"
+            "value": "right",
+            "label": "Right"
           }
         ],
-        "default": "middle"
+        "default": "center"
       }
     ],
     "presets": [
