@@ -1,4 +1,6 @@
-<h2 style="text-align: {{ section.settings.title_alignment }}; color: {{ section.settings.color }};">{{ section.settings.title }}</h2>
+<h2 style="text-align: {{ section.settings.title_alignment }}; color: {{ section.settings.color }}; font-size: {{ section.settings.font_size }};">
+  {{ section.settings.title }}
+</h2>
 
 <div style="display: flex; justify-content: center; gap: 20px;">
   {% for block in section.blocks %}
@@ -43,6 +45,15 @@
         "label": "Color",
         "id": "color",
         "default": "#000000"
+      }, {
+        "type": "range",
+        "label": "Font Size",
+        "id": "font_size",
+        "min": 12,
+        "max": 36,
+        "step": 1,
+        "unit": "px",
+        "default": 16
       }
     ],
     "blocks": [
