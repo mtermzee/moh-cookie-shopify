@@ -132,12 +132,13 @@
         "promotion_g9gyFW"
       ],
       "custom_css": [
-        "h2{font-size: 49px;}"
+
       ],
       "settings": {
         "title": "Promotion 1",
         "title_alignment": "center",
-        "color": "#1773b0"
+        "color": "#1773b0",
+        "font_size": 36
       }
     }
   },
